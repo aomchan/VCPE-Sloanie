@@ -1,28 +1,30 @@
 import { Briefcase, GraduationCap, Users, TrendingUp, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const profiles = [
-  { icon: TrendingUp, title: "Aspiring VCs", desc: "Students pursuing careers in venture capital and early-stage investing." },
-  { icon: Users, title: "Founders", desc: "Entrepreneurs exploring fundraising, investor relations, and growth strategy." },
-  { icon: Briefcase, title: "Operators", desc: "Professionals transitioning from operations and consulting into investing roles." },
+  { icon: TrendingUp, title: "Aspiring PE Professionals", desc: "Students pursuing careers in private equity and private market investing." },
+  { icon: Users, title: "Future VC Investors", desc: "Members exploring venture capital, early-stage investing, and fund strategy." },
+  { icon: Briefcase, title: "Operators & Consultants", desc: "Professionals transitioning from operations and consulting into investing roles." },
   { icon: GraduationCap, title: "Finance Professionals", desc: "Expanding their expertise into private markets and alternative investments." },
 ];
 
 const benefits = [
-  "VC and PE recruiting preparation",
-  "Investment framework workshops",
-  "Guest speaker access and Q&A sessions",
-  "Networking events with industry professionals",
-  "Mock interview practice",
-  "Exclusive investor dinners",
-  "Career mentorship programs",
-  "Fund visit opportunities",
+  "Tailored career advice and mentorship",
+  "Resume workshops and recruitment strategy sessions",
+  "Study treks to top PE firms in NYC, Boston, and London",
+  "Speaker series with industry professionals and experts",
+  "Networking events with PE firms and MIT alumni",
+  "Hands-on projects and investment workshops",
+  "Weekly newsletter with VCPE job and internship opportunities",
+  "Connections with 270+ members across MIT Sloan",
 ];
 
-const careerLogos = ["Sequoia Capital", "Bain Capital", "General Catalyst", "BCG", "McKinsey", "Goldman Sachs", "KKR", "Andreessen Horowitz"];
+const careerFirms = [
+  "Apollo Global Management", "EQT Partners", "The Carlyle Group", "Insight Partners",
+  "Macquarie", "Vista Equity Partners", "MIT Sloan", "Major PE & VC Firms",
+];
 
 const Community = () => {
   return (
@@ -34,8 +36,8 @@ const Community = () => {
         <div className="container-narrow">
           <p className="text-sloan-red font-semibold text-sm uppercase tracking-widest mb-3">Community</p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">Our Community</h1>
-          <p className="text-primary-foreground/70 text-lg max-w-xl">
-            A diverse network of students united by a shared passion for private markets and innovation.
+          <p className="text-primary-foreground/70 text-lg max-w-2xl">
+            Connect with future leaders from MIT who are committed to making their mark in private markets. The club serves as a nexus for collaboration, connecting like-minded individuals with industry professionals and alumni.
           </p>
         </div>
       </section>
@@ -63,6 +65,9 @@ const Community = () => {
             <div>
               <p className="text-sloan-red font-semibold text-sm uppercase tracking-widest mb-3">Member Benefits</p>
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">What members gain</h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Within this dynamic community, members gain unparalleled opportunities to immerse themselves in the intricacies of private market investing. Students acquire invaluable skills and insights essential for success in this competitive field.
+              </p>
               <div className="grid grid-cols-1 gap-3">
                 {benefits.map((b) => (
                   <div key={b} className="flex items-center gap-3">
@@ -73,26 +78,27 @@ const Community = () => {
               </div>
             </div>
             <div className="bg-primary rounded-lg p-10 text-center">
-              <p className="font-display text-5xl font-bold text-primary-foreground mb-2">400+</p>
-              <p className="text-primary-foreground/60 text-sm uppercase tracking-wider mb-6">Active Members</p>
-              <Link to="/join">
+              <p className="font-display text-5xl font-bold text-primary-foreground mb-2">270+</p>
+              <p className="text-primary-foreground/60 text-sm uppercase tracking-wider mb-4">Active Members</p>
+              <p className="text-primary-foreground/50 text-xs mb-6">One of the largest student clubs at MIT Sloan</p>
+              <a href="https://sloangroups.mit.edu/venturecapitalandprivateequity/club_signup" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="lg">Join VCPE</Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Career Outcomes */}
+      {/* Firms */}
       <section className="section-padding">
         <div className="container-narrow text-center">
-          <p className="text-sloan-red font-semibold text-sm uppercase tracking-widest mb-3">Career Outcomes</p>
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Where our members intern and work</h2>
+          <p className="text-sloan-red font-semibold text-sm uppercase tracking-widest mb-3">Our Network</p>
+          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Firms in our ecosystem</h2>
           <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
-            VCPE alumni have gone on to roles at top investment firms and consulting practices.
+            Students forge lasting relationships that propel them toward fulfilling careers in the VCPE sector through our treks, events, and alumni network.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {careerLogos.map((name) => (
+            {careerFirms.map((name) => (
               <div key={name} className="flex items-center justify-center h-16 rounded-lg border border-border bg-card">
                 <span className="font-display font-semibold text-muted-foreground text-sm">{name}</span>
               </div>

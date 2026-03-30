@@ -11,7 +11,7 @@ const Footer = () => {
               MIT Sloan <span className="text-sloan-red">VCPE</span> Club
             </h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-md">
-              The premier community for MIT Sloan students exploring venture capital, private equity, and the innovation economy.
+              Leading hub for MIT students passionate about delving into the dynamic industries of venture capital and private equity. A cornerstone of finance at MIT.
             </p>
           </div>
 
@@ -30,8 +30,8 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-sm uppercase tracking-wider mb-4 text-primary-foreground/50">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:vcpe-club@mit.edu" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors inline-flex items-center gap-2">
-                  <Mail size={14} /> vcpe-club@mit.edu
+                <a href="mailto:vcpe.officers@sloangroups.mit.edu" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors inline-flex items-center gap-2">
+                  <Mail size={14} /> vcpe.officers@sloangroups.mit.edu
                 </a>
               </li>
               <li>
