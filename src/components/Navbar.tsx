@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Events", href: "/events" },
   { label: "Community", href: "/community" },
   { label: "Team", href: "/team" },
+  { label: "For Recruiters", href: "/join" },
 ];
 
 const Navbar = () => {
