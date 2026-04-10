@@ -90,12 +90,42 @@ export default {
           from: { opacity: "0", transform: "scale(0.8)" },
           to: { opacity: "1", transform: "scale(1)" },
         },
+        "hero-line-in": {
+          "0%":   { opacity: "0", transform: "translateY(100%) skewY(3deg)" },
+          "100%": { opacity: "1", transform: "translateY(0) skewY(0deg)" },
+        },
+        "hero-fade-up": {
+          "0%":   { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "marquee-left": {
+          "0%":   { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-right": {
+          "0%":   { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "pillar-fade": {
+          "0%":   { opacity: "0", transform: "translateX(-12px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        "dash-grow": {
+          "0%":   { opacity: "0", transform: "scaleX(0)" },
+          "100%": { opacity: "1", transform: "scaleX(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out forwards",
         "count-up": "count-up 0.5s ease-out forwards",
+        "hero-line-in": "hero-line-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards",
+        "hero-fade-up": "hero-fade-up 0.7s ease-out forwards",
+        "marquee-left":  "marquee-left 28s linear infinite",
+        "marquee-right": "marquee-right 32s linear infinite",
+        "pillar-fade":   "pillar-fade 0.4s ease-out forwards",
+        "dash-grow":     "dash-grow 0.6s ease-out forwards",
       },
     },
   },
